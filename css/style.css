@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-container {
+  width: 100%;
+  height: 1208px;
+  background-image: url(../images/home-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-container .navbar {
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-container .navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-container .navbar .nav-links .nav-link {
+  margin-left: 100px;
+  list-style: none;
+}
+
+.home-container .navbar .nav-links .nav-link a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+}
+
+.home-container .navbar .logo img {
+  width: 80px;
+  margin-left: 400px;
+}
+
+.home-container .middle-section {
+  margin-top: 120px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-container .middle-section .bar {
+  margin-left: 192px;
+  background-color: #ffffff;
+  width: 2px;
+  height: 330px;
+}
+
+.home-container .middle-section .bar-co {
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 420px;
+  margin-top: 20px;
+}
+
+.home-container .middle-section .bar-co h1 {
+  margin-bottom: 45px;
+  font-weight: 100;
+  font-size: 38px;
+}
+
+.home-container .middle-section .bar-co p {
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+
+.home-container .middle-section .bar-co .bar-two {
+  height: 2px;
+  width: 84px;
+  background-color: #ffffff;
+  margin-bottom: 45px;
+}
+
+.home-container .middle-section .bar-co a {
+  padding: 15px 33px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.home-container footer a {
+  color: #c3bab5;
+}
+/*# sourceMappingURL=style.css.map */
