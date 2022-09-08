@@ -5,55 +5,77 @@
           box-sizing: border-box;
 }
 
-.home-container {
-  width: 100%;
-  height: 1208px;
-  background-image: url(../images/home-img.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.home-container .navbar {
+body .navbar {
   height: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.home-container .navbar .nav-links {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.home-container .navbar .nav-links .nav-link {
-  margin-left: 100px;
+body .navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
-.home-container .navbar .nav-links .nav-link a {
+body .navbar .nav-links .nav-link {
+  margin-left: 20%;
+  list-style: none;
+}
+
+body .navbar .nav-links .nav-link a {
   text-decoration: none;
   color: #ffffff;
   font-size: 19px;
 }
 
-.home-container .navbar .logo img {
+body .navbar .nav-links .logo img {
   width: 80px;
-  margin-left: 400px;
+}
+
+body .footer {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 5%;
+}
+
+body .footer a {
+  margin-left: 10px;
+  color: #c3bab5;
+}
+
+.home-container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../images/home-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .home-container .middle-section {
-  margin-top: 120px;
+  margin-top: 60px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,7 +83,7 @@
 }
 
 .home-container .middle-section .bar {
-  margin-left: 192px;
+  margin-left: 15%;
   background-color: #ffffff;
   width: 2px;
   height: 330px;
@@ -106,9 +128,249 @@
   color: #ffffff;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
-.home-container footer a {
-  color: #c3bab5;
+.home-container .middle-section .bar-co a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #1f1e1e;
+  font-weight: 600;
+}
+
+.booking-container {
+  background-image: url(../images/products-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.booking-container .booking-cont {
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.booking-container .booking-cont .booking-main {
+  width: 100%;
+  height: 300px;
+}
+
+.booking-container .booking-cont .booking-main h1 {
+  color: #ffffff;
+  font-size: 38px;
+  width: 340px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.booking-container .booking-cont .booking-main a {
+  width: 200px;
+  color: #ffffff;
+  padding: 15px 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.booking-container .booking-cont .booking-main a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #1f1e1e;
+  font-weight: 600;
+}
+
+.booking-container .booking-cont .booking-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.booking-container .card-section {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  margin-bottom: 20%;
+  justify-items: center;
+}
+
+.booking-container .card-section .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 429px;
+  height: 100%;
+  max-height: 464px;
+  background-image: url(/images/wood-element-1.png);
+  background-size: 100px;
+  border-radius: 10px;
+}
+
+.booking-container .card-section .card .card-img {
+  width: 100%;
+  position: relative;
+  height: 222px;
+}
+
+.booking-container .card-section .card .card-img img {
+  width: 100%;
+}
+
+.booking-container .card-section .card .card-img p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 123px;
+  height: 38px;
+  background-color: #F0130D;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: 10px;
+}
+
+.booking-container .card-section .card .card-text {
+  height: 242px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.booking-container .card-section .card .card-text h4 {
+  color: #f7f4f4;
+  font-size: 27px;
+  font-weight: 100;
+}
+
+.booking-container .card-section .card .card-text p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.booking-container .card-section .card .card-text a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 29px 115px;
+  background-color: rgba(224, 91, 24, 0.8);
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.booking-container .card-section .card .card-text a:hover {
+  background-color: #b63d00;
+}
+
+.nearby-container {
+  background-image: url(../images/nearby-img.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nearby-container .nearby-cont {
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.nearby-container .nearby-cont .nearby-main {
+  width: 100%;
+  height: 300px;
+}
+
+.nearby-container .nearby-cont .nearby-main h1 {
+  color: #ffffff;
+  font-size: 38px;
+  width: 340px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.nearby-container .nearby-cont .nearby-main a {
+  width: 200px;
+  color: #ffffff;
+  padding: 15px 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.nearby-container .nearby-cont .nearby-main a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #1f1e1e;
+  font-weight: 600;
+}
+
+.nearby-container .nearby-cont .nearby-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
